@@ -9,7 +9,7 @@ $(document).ready(function () {
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: true,
-		pauseOnDotsHover: true,
+		pauseOnDotsHover: true
 	})
 
 	$('.slider-hit').slick({
@@ -23,7 +23,7 @@ $(document).ready(function () {
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: true,
-		pauseOnDotsHover: true
+		pauseOnDotsHover: true,
 	})
 
 })
