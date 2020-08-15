@@ -1094,3 +1094,24 @@ footer {
 	line-height: 31px;
 	font-weight: 700;
 }
+/***** contacts *****/
+.contacts {
+	width: 100%;
+}
+.contacts-box {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.contacts-block {
+	flex-basis: 49%;
+	margin-bottom: 40px;
+}
+.contacts-block p {
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: 400;
+}
+.maps {
+	margin-top: 20px;
+}
