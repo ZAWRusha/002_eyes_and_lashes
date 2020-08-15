@@ -359,16 +359,13 @@ p {
 }
 
 /***** Настройка slick slider`a *****/
-
 .slider {
 	min-width: 0;
 }
-
 /* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
 }
-
 /* Лента слайдара */
 .slick-track {
 	display: flex;
@@ -398,11 +395,9 @@ p {
 .slider {
 	position: relative;
 }
-/* .slider .slick-arrow { */
 .slick-arrow {
 	position: absolute;
 	top: 50%;
-	/* margin: 325px 0 0 0; */
 	z-index: 5;
 	font-size: 0;
 	width: 52px;
@@ -415,16 +410,13 @@ p {
 	margin: 0 50px;
 	cursor: pointer;
 }
-/* .slider .slick-arrow:hover { */
 .slick-arrow:hover {
 	background-color: #000;
 }
-/* .slider .slick-arrow.slick-prev { */
 .slick-arrow.slick-prev {
 	left: 0;
 	transform: scaleX(-1);
 }
-/* .slider .slick-arrow.slick-next { */
 .slick-arrow.slick-next {
 	right: 0;
 }
@@ -576,6 +568,7 @@ p {
 	background: none;
 	background-color: #ffffff;
 	border: 1px solid #f3f3f3;
+	transition: all 0.5s;
 }
 .slider-hit .slider-item::after {
 	content: "Хит";
@@ -598,9 +591,12 @@ p {
 }
 .slider-hit .slider-item:hover {
 	border: 1px solid #000;
-	max-height: 630px;
+	max-height: 645px;
+	padding-bottom: 5px;
 }
-.slider-hit .slider-item:hover .inviz-block {
+.slider-hit .slider-item:hover .hit-box_bottom {
+	background-color: #fff;
+	max-height: 100%;
 	visibility: visible;
 	transform: translateY(0);
 	opacity: 1;
@@ -618,7 +614,6 @@ p {
 	display: flex;
 	min-height: 155px;
 	justify-content: space-between;
-	/* align-items: start; */
 	flex-direction: column;
 	padding: 25px 15px 25px 15px;
 	position: relative;
@@ -669,8 +664,12 @@ p {
 }
 .slider-hit .hit-box_bottom {
 	width: 100%;
-	padding: 0 15px 15px 15px;
-	/* border: 1px solid red; */
+	padding: 0 15px;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all 0.5s;
 }
 .slider-hit .hit-coast-box {
 	font-size: 18px;
@@ -685,13 +684,6 @@ p {
 	color: #000;
 	text-decoration: none;
 	margin-left: 10px;
-}
-.inviz-block {
-	/* border: 1px solid red; */
-	visibility: hidden;
-	opacity: 0;
-	transform: translateY(-10px);
-	transition: all 0.5s;
 }
 .slider-hit .hit-availability {
 	display: flex;
