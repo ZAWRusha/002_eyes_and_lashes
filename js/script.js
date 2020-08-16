@@ -1,4 +1,4 @@
-//slick slider
+//slick slider *********************************
 $(document).ready(function () {
 	$('.slider').slick({
 		arrows: true,
@@ -25,5 +25,12 @@ $(document).ready(function () {
 		pauseOnHover: true,
 		pauseOnDotsHover: true,
 	})
+
+	// categories-nav (vertical-nav) *********************************
+	$('.catalog-nav span').click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().find('ul').slideToggle();
+		$(this).parent().parent().toggleClass('active');
+	});
 
 })
