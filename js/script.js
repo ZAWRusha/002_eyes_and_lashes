@@ -33,4 +33,13 @@ $(document).ready(function () {
 		$(this).parent().parent().toggleClass('active');
 	});
 
+	// choice color **************************************************
+	$('.checkbox-color').click(function (e) {
+		if (!$(this).hasClass('checkbox-color-active')) {
+			$(this).addClass('checkbox-color-active')
+		} else {
+			$(this).removeClass('checkbox-color-active')
+		}
+	})
+
 })
