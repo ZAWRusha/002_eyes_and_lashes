@@ -14,17 +14,30 @@ $(document).ready(function () {
 
 	$('.slider-hit').slick({
 		arrows: true,
-		// 	dots: false,
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		infinite: true,
-		// initialSlide: 0,
 		autoplay: true,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
 		pauseOnHover: true,
-		pauseOnDotsHover: true,
+		pauseOnDotsHover: true
 	})
+
+	// $('.slider-nav').slick({
+	// arrows: true,
+	// slidesToShow: 3,
+	// slidesToScroll: 1,
+	// focusOnSelect: true,
+	// dots: false
+	// centerMode: true,
+	// variableHeight: true,
+	// rows: 2,
+	// slidersPerRows: 3,
+	// infinite: true,
+	// initialSlide: 0,
+	// autoplay: false
+	// })
 
 	// categories-nav (vertical-nav) *********************************
 	$('.catalog-nav span').click(function (e) {

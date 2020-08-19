@@ -1074,6 +1074,10 @@ footer {
 	justify-content: center;
 	height: 17px;
 	width: 17px;
+	transition: filter 0.3s;
+}
+.footer-social_title a img:hover {
+	filter: brightness(150%);
 }
 .copyright {
 	font-size: 12px;
@@ -1695,4 +1699,85 @@ margin-bottom: 50px;
 .category-page-active {
 	background-color: #000000;
 	color: #ffffff;
+}
+
+/************************** item-detail ***********************/
+
+/* .item-detail-container {
+
+}
+.item-detail-img {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 606px;
+	height: 523px;
+	background-color: #ffffff;
+	border: 1px solid #f3f3f3;
+}
+.item-detail-small {
+	height: 100%;
+	width: 90px;
+	border: 1px solid red;
+} */
+
+/******************* loyalty ***********************/
+.loyalty {
+	margin-bottom: 50px;
+}
+.loyalty {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.loyalty-diagrams {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top: 45px;
+	margin-bottom: 75px;
+	padding: 0 100px;
+}
+.loyalty-diagram {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+.loyalty-diagram div {
+	width: 200px;
+	height: 45px;
+	margin-top: 15px;
+}
+.loyalty-diagrams strong {
+	font-size: 82px;
+	line-height: normal;
+	font-weight: 700;
+}
+.diagram-3 div {
+	border: 1px solid #e0e0e0;
+	height: 45px;
+}
+.diagram-5 div {
+	height: 90px;
+	background-image: linear-gradient(0.0deg, #ece7de 0%, #f0efe8 50%, #f2efe9 100%);
+}
+.diagram-7 div {
+	height: 140px;
+	background-image: linear-gradient(0.0deg, #f4f1e2 0%, #f6edd1 50%, #f9ecc3 100%)
+}
+.diagram-10 div {
+	height: 190px;
+	background-image: linear-gradient(0.0deg, #f0daae 0%, #fbf7c8 50%, #efd49d 100%);
+}
+.diagram-12 div {
+	height: 240px;
+	background-image: linear-gradient(0.0deg, #d6b274 0%, #fee5a5 50%, #c39d5f 100%);
+}
+.diagram-15 div {
+	height: 290px;
+	background-image: linear-gradient(0.0deg, #b29457 0%, #fbf7c8 50%, #b39558 100%);
 }
