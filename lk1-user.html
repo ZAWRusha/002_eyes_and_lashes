@@ -10,8 +10,9 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.formstyler.theme.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mobile.css">
 
@@ -128,9 +129,9 @@
 	<div class="separator">
 		<div class="container">
 			<div class="separator-wrapper">
-				<div class="separator-title">Мои заказы</div>
+				<div class="separator-title">Личная информация</div>
 				<div class="separator-links">
-					<a href="">Главная</a> / <a href="">Мой кабинет</a> / <span>Мои заказы</span>
+					<a href="">Главная</a> / <a href="">Мой кабинет</a> / <span>Личная информация</span>
 				</div>
 			</div>
 		</div>
@@ -162,34 +163,35 @@
 								<input type="text" class="contacts-inp login-inp" name="phone">
 								<div class="login-item-title">E-mail<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">Наименование банка<span>*</span></div>
+								<div class="login-item-title">Город<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">Бик банка<span>*</span></div>
+								<div class="login-item-title">Область/Край<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">К/С<span>*</span></div>
+								<div class="login-item-title">Индекс<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
 							</div>
 							<div class="user-block">
-								<div class="login-item-title">Компания<span>*</span></div>
+								<div class="login-item-title">Улица, дом<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">ИНН<span>*</span></div>
+								<div class="login-item-title">Номер квартиры<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">Расчетный счет<span>*</span></div>
+								<div class="login-item-title">Старый пароль<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">Город<span>*</span></div>
+								<div class="login-item-title">Новый пароль<span>*</span></div>
 								<input type="text" class="contacts-inp login-inp">
-								<div class="login-item-title">Адрес доставки<span>*</span></div>
-								<textarea class="contacts-textarea login-inp user-textarea"></textarea>
+								<div class="login-item-title">Подтвердить новый пароль<span>*</span></div>
+								<input type="text" class="contacts-inp login-inp">
 							</div>
 						</div>
-						<div class="check check-fix">
+						<div class="check">
 							<label>
-								<div class="jq-checkbox"><input type="checkbox">
-									<div class="jq-checkbox__div"></div>
-								</div> <span>Даю согласие на <a href="#">обработку персональных данных</a></span>
+								<input type="checkbox" checked>
+								<span>Даю согласие на <a href="#">обработку персональных данных</a></span>
 							</label>
 						</div>
-						<button type="submit" class="btn modal-submit">Сохранить </button>
+						<div class="user-form-btn">
+							<button type="submit" class="button-b">Регистрация</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -270,8 +272,8 @@
 	<!-- end footer -->
 
 	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>
