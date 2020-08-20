@@ -2268,16 +2268,9 @@ footer {
 	width: calc(100% - 20px);
 }
 
-/* .jq-checkbox {
-	height: 13px !important;
-	width: 13px !important;
+.check label span a {
+	font-weight: 700;
 }
-.jq-checkbox.checked .jq-checkbox__div {
-	height: 5px !important;
-	width: 8px !important;
-	margin-top: 2px !important;
-	margin-left: 2px !important;
-} */
 
 /************************* LK *****************************/
 /************************* lk-main *****************************/
@@ -2423,13 +2416,6 @@ footer {
 }
 
 /********************* lk-discount *******************/
-
-.lk-discount {
-	/* border: 1px solid #e0e0e0; */
-}
-
-.lk-discount {}
-
 .lk-discount-blocks {
 	display: flex;
 	width: 100%;
@@ -2444,8 +2430,6 @@ footer {
 	font-weight: 400;
 	margin-top: 25px;
 }
-
-.lk-discount-box {}
 
 .lk-discount-block {
 	font-size: 22px;
@@ -2474,4 +2458,53 @@ footer {
 	height: 2px;
 	background-color: #e0e0e0;
 	margin: 35px 0;
+}
+
+/********************* lk-subscribe *******************/
+.lk-subscribe-blocks {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 408px;
+	justify-content: space-between;
+	padding: 20px 30px 30px;
+	border: 1px solid #e0e0e0;
+}
+
+.lk-subscribe-block {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #333333;
+}
+
+.lk-subscribe-block-title {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #333333;
+	margin: 25px 0 30px;
+}
+
+.lk-subscribe-block-mail {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+.lk-subscribe-mail {
+	margin-bottom: 0;
+}
+
+.lk-subscribe-block-mail {}
+
+.lk-subscribe-inp {
+	width: 440px;
+	height: 45px;
+	background-color: #ffffff;
+	border: 1px solid #e0e0e0;
+	margin: 0 20px 5px 0;
 }
