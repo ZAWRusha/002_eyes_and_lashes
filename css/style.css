@@ -1,5 +1,7 @@
 @charset "utf-8";
 * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
 }
@@ -118,33 +120,6 @@ h6 {
 	padding: 0;
 	margin: 0;
 }
-input {
-	width: 230px;
-	height: 43px;
-	background-color: #efefef;
-	border-radius: 15px;
-	border: none;
-	outline: none;
-	padding-left: 15px;
-	padding-top: 3px;
-	vertical-align: center;
-	font-size: 16px;
-	line-height: 34px;
-	font-weight: 400;
-}
-input::placeholder,
-textarea::placeholder {
-	font-size: 16px;
-	line-height: 34px;
-	font-weight: 400;
-	color: #858585;
-	opacity: 0.8;
-	border: none;
-	transition: opacity 0.5s ease;
-}
-input:focus::placeholder {
-	opacity: 0;
-}
 p {
 	padding: 0;
 	margin: 0;
@@ -243,7 +218,27 @@ border: 0;
 	overflow: hidden;
 }
 .search-input {
+	width: 230px;
+	height: 43px;
+	vertical-align: center;
+	font-size: 16px;
+	line-height: 34px;
+	font-weight: 400;
 	padding-right: 40px;
+	color: #000;
+	padding-left: 15px;
+	background-color: #efefef;
+	border-radius: 15px;
+	border: none;
+	outline: none;
+}
+.search-input::placeholder {
+	color: #858585;
+	transition: opacity 0.5s;
+	opacity: 0.8;
+}
+.search-input:focus::placeholder {
+	opacity: 0;
 }
 .search-submit {
 	position: absolute;
@@ -252,8 +247,9 @@ border: 0;
 	background: url(../img/icons/icon_search-black.png) no-repeat center;
 	background-color: transparent;
 	top: 50%;
-	margin-top: -10px;
-	right: 4px;
+	margin-top: -9px;
+	right: 10px;
+	border: none;
 	cursor: pointer;
 }
 .icons-pannel {
@@ -1892,7 +1888,110 @@ padding-left: 15px;
 	background-color: #000;
 }
 
-/************************* lk *****************************/
+/*********************** login *****************************/
+/*********************** contacts *****************************/
+.contacts-inp {
+	height: 30px;
+	width: calc(50% - 15px);
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #333333;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #e0e0e0;
+	transition: border .3s;
+}
+.contacts-inp:focus {
+	border: 1px solid #000;
+}
+/*********************** contacts end *****************************/
+
+
+.login-blocks {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.login-block {
+	width: 640px;
+}
+.login-block-title {
+font-size: 18px;
+line-height: 30px;
+font-weight: 500;
+color: #000000;
+margin-bottom: 25px;
+}
+.login-item {
+	padding: 40px;
+	width: 100%;
+	border: 1px solid #e0e0e0;
+}
+.login-item-title {
+font-size: 13px;
+line-height: 30px;
+font-weight: 400;
+color: #7b7b7b;
+	margin-bottom: 10px;
+}
+.login-item-title span {
+	color: #ed4565;
+}
+.login-inp {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.contacts-form-btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+}
+.contacts-form-btn .button-b{
+	margin: 0;
+}
+.login-forgot {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	margin-right: 40px;
+}
+.check {
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+.check label {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+.check label span {
+	font-size: 14px;
+	width: calc(100% - 20px);
+}
+/* .jq-checkbox {
+	height: 13px !important;
+	width: 13px !important;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+	height: 5px !important;
+	width: 8px !important;
+	margin-top: 2px !important;
+	margin-left: 2px !important;
+} */
+
+/************************* LK *****************************/
 /************************* lk-main *****************************/
 .lk-blocks {
 	display: flex;
@@ -1976,4 +2075,26 @@ color: #000;
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 700;
+}
+/**************************** user *****************************/
+.user-blocks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.user {
+	padding: 30px;
+	border: 1px solid #e0e0e0;
+}
+.user-block {
+	width: calc(50% - 30px);
+}
+.user-textarea {
+	height: 110px;
+}
+.check-fix {
+	margin-bottom: 25px;
 }
