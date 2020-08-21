@@ -2399,3 +2399,11 @@ footer {
 .category-item-wrapper:nth-child(4n) {
 	margin-right: 0px;
 }
+.complited-box {
+	margin: 60px 0 400px;
+}
+.complited-box h1 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #333333;
+}
