@@ -2310,3 +2310,73 @@ footer {
 .shop-full-btns .button-shop2 {
 	margin-top: 15px;
 }
+
+/*************************** lk-order *************************/
+.order-title {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.order-item {
+	padding: 30px 60px;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 30px;
+}
+.order-block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+}
+.order-image {
+	height: 83px;
+	width: 83px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.order-image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+.order-left-content {
+	width: calc(100% - 140px);
+}
+.order-item-title {
+	font-size: 16px;
+	color: #1c1c1c;
+	margin-bottom: 15px;
+}
+.order-price {
+	font-size: 18px;
+}
+.order-text {
+	font-size: 13px;
+	margin-top: 30px;
+	color: #333333;
+}
+.order-text span {
+	font-weight: 700;
+}
+.orders-title {
+	font-size: 16px;
+	color: #333333;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.orders-list a {
+	font-size: 13px;
+	color: #c2c2c2;
+}
+.orders-list a:hover {
+	color: var(--accent);
+}
+.orders-list li {
+	margin-bottom: 15px;
+}
