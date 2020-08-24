@@ -1,5 +1,5 @@
 //slick slider *********************************
-$(document).ready(function () {
+$(document).ready(function() {
 	$('.slider').slick({
 		arrows: true,
 		dots: true,
@@ -40,14 +40,14 @@ $(document).ready(function () {
 	// })
 
 	// categories-nav (vertical-nav) *********************************
-	$('.catalog-nav span').click(function (e) {
+	$('.catalog-nav span').click(function(e) {
 		e.preventDefault();
 		$(this).parent().parent().find('ul').slideToggle();
 		$(this).parent().parent().toggleClass('active');
 	});
 
 	// choice color **************************************************
-	$('.checkbox-color').click(function (e) {
+	$('.checkbox-color').click(function(e) {
 		if (!$(this).hasClass('checkbox-color-active')) {
 			$(this).addClass('checkbox-color-active')
 		} else {
@@ -55,6 +55,45 @@ $(document).ready(function () {
 		}
 	})
 
-	$('input[type=checkbox]').styler();
+	// change checkbox radio *************************************************
+	$('input[type=checkbox],input[type=radio]').styler();
+
+})
+
+// accordion *******************************************************
+$(document).ready(function() {
+	$('.reg-next').click(function(e) {
+		e.preventDefault()
+		var id = $(this).attr('data-num')
+		$('.reg-item').eq(id).find('.reg-item-content').slideToggle()
+		$('.reg-item').eq(id - 1).find('.reg-item-content').slideToggle()
+		var target = $('#reg')
+		var top = target.offset().top;
+		$('html,body').animate({
+			scrollTop: top
+		}, 1000)
+	})
+
+	$('.reg-prev').click(function(e) {
+		e.preventDefault()
+		var id = $(this).attr('data-num')
+		$('.reg-item').eq(id).find('.reg-item-content').slideToggle()
+		$('.reg-item').eq(id - 1).find('.reg-item-content').slideToggle()
+		var target = $('#reg')
+		var top = target.offset().top
+		$('html,body').animate({
+			scrollTop: top
+		}, 1000)
+	})
+
+	$('.order-check').click(function(e) {
+		e.preventDefault();
+		var image = $(this).css('background-image');
+		var text = $(this).attr('data-text');
+		$(this).parent().parent().parent().find('.order-check-res p').html(text);
+		$(this).parent().parent().parent().find('.order-check-res .order-check').css('background-image', image);
+		$(this).parent().parent().find('.order-check').removeClass('active');
+		$(this).addClass('active');
+	});
 
 })
