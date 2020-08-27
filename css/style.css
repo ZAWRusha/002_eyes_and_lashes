@@ -402,7 +402,7 @@ ul {
 .slider .slider-item {
 	background: url(../img/slider_bg.jpg) no-repeat center;
 	background-size: cover;
-	min-height: 655px;
+	/* min-height: 655px; */
 }
 .slider .slider-tagline {
 	font-size: 32px;
@@ -561,7 +561,7 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 30px;
-	min-height: 630px;
+	min-height: 635px;
 }
 .slider-hit .slick-arrow {
 	top: 227px;
@@ -578,7 +578,7 @@ ul {
 }
 .slider-item-wrapper {
 	max-width: 320px;
-	/* border: 1px solid blue; */
+	/* height: 455px; */
 }
 .slider-hit .slider-item,
 .new-item,
@@ -589,7 +589,9 @@ ul {
 	align-items: center;
 	position: relative;
 	max-width: 302px;
-	max-height: 455px;
+	/* max-height: 455px; */
+	/* height: 635px; */
+	height: 455px;
 	background: none;
 	background-color: #ffffff;
 	border: 1px solid #f3f3f3;
@@ -618,7 +620,8 @@ ul {
 .slider-hit .slider-item:hover,
 .category-item:hover {
 	border: 1px solid #000;
-	max-height: 645px;
+	height: 635px;
+	/* max-height: 445px; */
 	padding-bottom: 5px;
 }
 .slider-hit .slider-item:hover .hit-box_bottom,
@@ -706,6 +709,8 @@ ul {
 }
 .slider-hit .hit-box_bottom,
 .category-item .hit-box_bottom {
+	/* top: 455px; */
+	/* position: absolute; */
 	width: 100%;
 	padding: 0 15px;
 	max-height: 0;
@@ -713,6 +718,7 @@ ul {
 	opacity: 0;
 	transform: translateY(-10px);
 	transition: all 0.5s;
+	z-index: 1000;
 }
 .hit-cost-box {
 	font-size: 18px;
@@ -831,14 +837,13 @@ ul {
 .hit-blocks_container {
 	position: relative;
 	background-color: #fff;
-	margin-top: -135px;
-	/* border: 1px solid #000; */
 }
 .hit-blocks {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	margin-top: -130px;
 }
 .hit-block {
 	display: flex;
@@ -876,6 +881,7 @@ ul {
 	text-align: center;
 	width: 100%;
 	color: #ffffff;
+	margin-top: -130px;
 	margin-bottom: 40px;
 }
 .discount-block_title {
@@ -902,6 +908,9 @@ ul {
 	box-shadow: 0 0 0 5px #d33c1f;
 }
 /***** Все для ресниц и бровей (all-for) *****/
+.all-for {
+	margin-top: -130px;
+}
 .all-for img {
 	float: right;
 	margin-left: 50px;
@@ -1519,14 +1528,55 @@ footer {
 /**************** category-blocks ********************/
 .category-blocks {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
 	margin-top: 50px;
 }
 .category-item-wrapper {
 	max-width: 302px;
 	margin-bottom: 50px;
+	margin-right: 19px;
 }
+.category-item:hover {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #fff;
+	/* height: 635px; */
+	height: 455px;
+	padding-bottom: 5px;
+}
+.category-item:hover .hit-box_bottom {
+	background-color: #fff;
+	max-height: 100%;
+	visibility: visible;
+	transform: translateY(0);
+	opacity: 1;
+}
+.category-item:hover .hit-links {
+	visibility: visible;
+	transform: translateY(0);
+	opacity: 1;
+}
+.category-item .hit-box_bottom {
+	top: 454px;
+	position: absolute;
+	width: calc(100% + 2px);
+	padding: 0 15px 15px;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all 0.5s;
+	z-index: 1000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
 /***************** table-item *************************/
 .table-item_wrapper {
 	width: 100%;
@@ -2383,20 +2433,6 @@ footer {
 /******************** lk-favorite **********************/
 .lk-content .category-blocks {
 	margin-top: 0;
-}
-.category-blocks {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-	margin-top: 50px;
-}
-.category-item-wrapper {
-	max-width: 302px;
-	margin-bottom: 50px;
-	margin-right: 19px;
 }
 .category-item-wrapper:nth-child(4n) {
 	margin-right: 0px;
