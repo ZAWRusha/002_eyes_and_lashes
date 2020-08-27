@@ -96,4 +96,42 @@ $(document).ready(function() {
 		$(this).addClass('active');
 	});
 
+
+	$('#photos').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: false,
+		fade: true,
+		asNavFor: '#photos2'
+	});
+
+	$('#photos2').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		dots: false,
+		focusOnSelect: true,
+		arrows: true,
+		vertical: true,
+		verticalSwiping: true,
+		asNavFor: '#photos',
+		prevArrow: '<button type="button" class="slick-prev photos-prev-arrow">Previous</button>',
+		nextArrow: '<button type="button" class="slick-next photos-next-arrow">Next</button>',
+		// responsive: [{
+		// 	breakpoint: 1300,
+		// 	settings: {
+		// 		slidesToShow: 2
+		// 	}
+		// }]
+	});
+
+	$('.tabs-nav a').click(function(e) {
+		e.preventDefault();
+		var index = $(this).index();
+		$('.tabs-nav a').removeClass('active');
+		$(this).addClass('active');
+		$('.tabs-block').hide();
+		$('.tabs-block').eq(index).show();
+	});
+
 })
