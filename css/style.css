@@ -3139,3 +3139,102 @@ footer {
 .slick-next:before {
 	font-size: 0px !important;
 }
+
+/*************** modal **************************/
+.modal-open {
+	display: inline-block;
+	padding: 10px 20px;
+	border: 1px solid #000;
+	margin-right: 20px;
+}
+.modal-bg {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 12;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+/* .modal-item, */
+.modal-accepted,
+.modal-buy {
+	display: none;
+	position: fixed;
+	width: 600px;
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%);
+	color: #15151c;
+	background-color: #fdfdfd;
+	z-index: 15;
+}
+.modal-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	height: 36px;
+	width: 36px;
+	color: #fff;
+	background-color: #e6c14b;
+	border-radius: 50%;
+	z-index: 16;
+	cursor: pointer;
+	transition: all .3s;
+}
+.modal-close>span {
+	font-size: 64px;
+	font-weight: 300;
+	line-height: 0;
+	margin-bottom: 4px;
+	text-decoration: none;
+}
+.modal-close:hover {
+	background-color: #898989;
+}
+.modal-content {
+	padding: 25px 40px;
+}
+.modal-accepted-content {
+	padding: 25px 10px;
+	text-align: center;
+}
+.modal-accepted-content p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #333333;
+}
+.modal-accepted-content p a {
+	font-weight: 700;
+}
+.modal-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 500;
+	color: #fdfdfd;
+	background-color: #000000;
+}
+.modal-inp {
+	margin-bottom: 20px;
+}
+.modal-check {
+	margin-bottom: 20px;
+}
+.modal-box-btn {
+	justify-content: flex-end;
+}
+.modal-btn {
+	width: 201px;
+	height: 32px;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+}

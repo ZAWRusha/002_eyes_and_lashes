@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="viewport" content="user-scalable=yes, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+	<title>EYES & LASHES</title>
+</head>
+
+<body>
+	<a class="modal-open modal-open-buy">Open modal-buy</a>
+	<a class="modal-open modal-open-accepted">Open modal-accepted</a>
+
+	<div class="modal-bg"></div>
+
+	<!-- modal-buy -->
+	<div class="modal-buy">
+		<div class="modal-close"><span>&times;</span></div>
+		<div class="modal-title">Купить “Название товара”</div>
+		<div class="modal-content">
+			<div class="login-item-title">ФИО<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp">
+			<div class="login-item-title">Телефон<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp" name="phone">
+			<div class="login-item-title">E-mail<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp">
+			<div class="login-item-title">Адрес доставки и комментарий к заказу<span>*</span></div>
+			<textarea rows="5" cols="45" name="text" class="contacts-inp login-inp textarea-inp modal-inp"></textarea>
+			<div class="check modal-check">
+				<label>
+					<div><input type="checkbox" checked=""></div>
+					<span>Даю согласие на <a href="#">обработку персональных данных</a></span>
+				</label>
+			</div>
+			<div class="user-form-btn modal-box-btn">
+				<button type="submit" class="button-b modal-btn">Отправить</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal-accepted -->
+	<div class="modal-accepted">
+		<div class="modal-close"><span>&times;</span></div>
+		<div class="modal-title">Ваша заявка принята!</div>
+		<div class="modal-accepted-content">
+			<p>Ваша заявка принята, мы перезвоним Вам в ближайшее время!</p>
+			<p>Спасибо за обращение в интернет-магазин <a href="">Eyes&Lashes</a></p>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

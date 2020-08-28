@@ -134,4 +134,29 @@ $(document).ready(function() {
 		$('.tabs-block').eq(index).show();
 	});
 
+	// modal (popup) **************************************
+
+	//closed all modals
+	$('.modal-bg, .modal-close').click(function(event) {
+		event.preventDefault()
+		$('.modal-bg').fadeOut()
+		$('.modal-buy').fadeOut()
+		$('.modal-accepted').fadeOut()
+		// mySwiper.update()
+	})
+
+	//listen 'buy' modal and open on click
+	$('.modal-open-buy').click(function(event) {
+		event.preventDefault()
+		$('.modal-bg').fadeIn()
+		$('.modal-buy').fadeIn()
+	})
+
+	//listen 'accepted' modal and open on click
+	$('.modal-open-accepted').click(function(event) {
+		event.preventDefault()
+		$('.modal-bg').fadeIn()
+		$('.modal-accepted').fadeIn()
+	})
+
 })
