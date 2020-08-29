@@ -1697,12 +1697,12 @@ footer {
 	width: 15px;
 	height: 13px;
 	background: url(../img/icons/icon_favorite.png) no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	margin-left: 5px;
 }
 .favorite-box .icon-favorite:hover {
 	background: url(../img/icons/icon_favorite_hover.png) no-repeat center;
-	background-size: cover;
+	background-size: contain;
 }
 /***************************** pagination *********************/
 .pagination {
@@ -3145,7 +3145,7 @@ footer {
 	display: inline-block;
 	padding: 10px 20px;
 	border: 1px solid #000;
-	margin-right: 20px;
+	margin: 15px;
 }
 .modal-bg {
 	display: none;
@@ -3157,7 +3157,7 @@ footer {
 	z-index: 12;
 	background-color: rgba(0, 0, 0, 0.7);
 }
-/* .modal-item, */
+.modal-item,
 .modal-accepted,
 .modal-buy {
 	display: none;
@@ -3237,4 +3237,14 @@ footer {
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 400;
+}
+/************* modal-item ***************/
+.modal-item {
+	width: 1286px;
+}
+.modal-item .table-item::after {
+	content: "";
+	background: none;
+	border: none;
+	box-shadow: none;
 }

@@ -142,6 +142,7 @@ $(document).ready(function() {
 		$('.modal-bg').fadeOut()
 		$('.modal-buy').fadeOut()
 		$('.modal-accepted').fadeOut()
+		$('.modal-item').fadeOut()
 		// mySwiper.update()
 	})
 
@@ -157,6 +158,13 @@ $(document).ready(function() {
 		event.preventDefault()
 		$('.modal-bg').fadeIn()
 		$('.modal-accepted').fadeIn()
+	})
+
+	//listen 'item' modal and open on click
+	$('.modal-open-item').click(function(event) {
+		event.preventDefault()
+		$('.modal-bg').fadeIn()
+		$('.modal-item').fadeIn()
 	})
 
 })
