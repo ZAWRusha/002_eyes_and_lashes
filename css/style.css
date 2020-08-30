@@ -510,6 +510,17 @@ ul {
 	top: 0px;
 	border: none;
 }
+.catalog-item:hover .catalog-title {
+	font-size: 26px;
+	font-weight: 700;
+	color: #2f322b;
+	padding: 0 10px;
+	height: auto;
+	/* border: 1px solid #000; */
+}
+.catalog-item:hover .catalog-link {
+	font-weight: 700;
+}
 .catalog-item img {
 	border: none;
 }
@@ -526,16 +537,22 @@ ul {
 	transition: all 0.5s;
 }
 .catalog-title {
+	display: flex;
+	align-items: center;
 	text-align: center;
 	height: 60px;
 	font-size: 22px;
 	line-height: 0;
 	font-weight: 500;
-	padding: 30px 10px;
+	line-height: 1.2;
+	padding: 0 10px;
+	transition: all 0.5s;
+
 }
 .catalog-link {
 	font-size: 16px;
 	line-height: 32px;
+	transition: all 0.5s;
 }
 .catalog-link:hover {
 	color: #000;
@@ -1643,7 +1660,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	width: 367px;
-	padding: 70px 0 20px;
+	padding: 70px 10px 20px;
 	background-color: #f8f8f8;
 	border-left: 1px solid #f3f3f3;
 }
@@ -3248,4 +3265,14 @@ footer {
 	background: none;
 	border: none;
 	box-shadow: none;
+}
+.modal-item .button-cart,
+.modal-item .button-table-item {
+	margin: 40px 0 0 0;
+}
+.modal-item .favorite-box {
+	width: 100%;
+	text-align: right;
+	margin-left: 0;
+	margin-right: 30px;
 }
