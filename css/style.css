@@ -641,7 +641,6 @@ ul {
 .category-item:hover {
 	border: 1px solid #000;
 	height: 635px;
-	/* max-height: 445px; */
 	padding-bottom: 5px;
 }
 .slider-hit .slider-item:hover .hit-box_bottom,
@@ -729,8 +728,6 @@ ul {
 }
 .slider-hit .hit-box_bottom,
 .category-item .hit-box_bottom {
-	/* top: 455px; */
-	/* position: absolute; */
 	width: 100%;
 	padding: 0 15px;
 	max-height: 0;
@@ -1243,141 +1240,6 @@ footer {
 	margin-top: 20px;
 	width: 800px;
 }
-/************************ Отзывы (feedback) ******************/
-/* .feedback-wrapper {
-	margin-bottom: 40px;
-}
-.feedback-wrapper h2 {
-	font-size: 40px;
-	font-weight: 500;
-	letter-spacing: normal;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-.feedback-wrapper h2 span {
-	color: #8592a7;
-}
-.new-feedback {
-	display: block;
-	border-bottom: 2px solid #f2f4f8;
-}
-.new-feedback div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 70px;
-	background-color: #2e6be6;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 700;
-	margin-bottom: 20px;
-	border-radius: 3px;
-}
-.feedback-box {
-	border-bottom: 2px solid #f2f4f8;
-	margin-top: 15px;
-}
-.feedback-block {
-	display: flex;
-	padding-bottom: 10px;
-}
-.feedback-left {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: flex-start;
-	min-width: 250px;
-	padding: 15px 0;
-}
-.feedback-ava-client {
-	height: 80px;
-	border-radius: 50%;
-	margin-bottom: 15px;
-}
-.feedback-mid {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: flex-start;
-	width: 100%;
-	padding: 40px 20px 20px;
-}
-.feedback-mid span {
-	font-size: 20px;
-	font-weight: 400;
-	margin-top: 15px;
-	line-height: 25px;
-	font-weight: 500;
-	color: #555;
-}
-.feedback-name {
-	font-size: 20px;
-	font-weight: 700;
-	margin-bottom: 5px;
-}
-.feedback-subfeedback {
-	color: #333;
-}
-.feedback-img-block img {
-	max-width: 380px;
-	max-height: 380px;
-	margin-top: 15px;
-	margin-right: 10px;
-}
-.feedback-more {
-	color: #8592a7;
-}
-.feedback-right {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-	min-width: 200px;
-	color: #8592a7;
-	font-weight: 500;
-	padding-top: 40px;
-}
-.feedback-right img {
-	margin-right: 10px;
-}
-.feedback-block-color {
-	background-color: #f4f8fc;
-	border-radius: 7px;
-}
-.feedback-ava-market {
-	width: 80px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	border-radius: 5px;
-	border: 2px solid #ccd0d6;
-}
-.feedback-mid-icons {
-	flex-direction: row;
-}
-.feedback-mid-icons a {
-	margin-right: 110px;
-}
-.feedback-icon {
-	position: relative;
-}
-.feedback-icon::after {
-	content: "";
-	position: absolute;
-	top: 6px;
-	left: 40px;
-	color: #8f9bae;
-	font-size: 16px;
-	font-weight: 700;
-}
-.feedback-icon-like::after {
-	content: "0";
-}
-.feedback-icon-count::after {
-	content: "1";
-}
-.feedback-icon-feedback::after {
-	content: "0";
-} */
 /************************ Catalog page ************************/
 /***************** categories-nav (vertical-nav) **************/
 .category {
@@ -1643,7 +1505,6 @@ footer {
 	border-right: 1px solid #000;
 	border-left: 1px solid #000;
 	border-bottom: 1px solid #fff;
-	/* height: 635px; */
 	height: 455px;
 	padding-bottom: 5px;
 }
@@ -1846,23 +1707,6 @@ footer {
 	background-color: #000000;
 	color: #ffffff;
 }
-/************************** item-detail ***********************/
-/* .item-detail-container {
-}
-.item-detail-img {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 606px;
-	height: 523px;
-	background-color: #ffffff;
-	border: 1px solid #f3f3f3;
-}
-.item-detail-small {
-	height: 100%;
-	width: 90px;
-	border: 1px solid red;
-} */
 /******************* loyalty ***********************/
 .loyalty {
 	margin-bottom: 50px;
@@ -2556,7 +2400,6 @@ footer {
 	font-size: 14px;
 	font-weight: 400;
 	color: #333333;
-	/* margin-bottom: 10px; */
 }
 .reg-info-item p span {
 	font-size: 12px;
@@ -2645,7 +2488,6 @@ footer {
 	justify-content: flex-end;
 	align-items: center;
 	align-content: center;
-	/* border: 1px solid; */
 }
 .reg-item-btns a,
 .reg-item-btns button {
@@ -2660,9 +2502,6 @@ footer {
 	align-items: flex-start;
 	align-content: flex-start;
 }
-/* .reg-delivery-box .user-block {
-	flex-basis: 55%;
-} */
 .reg-delivery {
 	flex-basis: 45%;
 }

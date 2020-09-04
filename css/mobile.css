@@ -189,9 +189,6 @@
 	.container {
 		width: 1224px;
 	}
-	.top-menu_block {
-		padding: 19px 0 0;
-	}
 	.modal-item {
 		width: auto;
 	}
@@ -318,14 +315,6 @@
 	.contacts-block {
 		flex-basis: 49%;
 	}
-	/* .contacts-block p {
-		line-height: 10px;
-		height: 30px;
-		margin-bottom: 20px;
-	}
-	.contacts-block p strong {
-		line-height: 40px;
-	} */
 	.maps {
 		width: 450px;
 	}

@@ -217,7 +217,7 @@ $(document).ready(function() {
 	});
 
 
-	//closed all modals
+	//closed all modals fadeOut
 	$('.modal-bg, .modal-close').click(function(event) {
 		event.preventDefault()
 		$('.modal-bg').fadeOut()
@@ -230,13 +230,15 @@ $(document).ready(function() {
 	//listen 'buy' modal and open on click
 	$('.modal-open-buy').click(function(event) {
 		event.preventDefault()
+		$('.modal-item').fadeOut()
 		$('.modal-bg').fadeIn()
 		$('.modal-buy').fadeIn()
 	})
 
 	//listen 'accepted' modal and open on click
-	$('.modal-open-accepted').click(function(event) {
+	$('.modal-open-accepted, .modal-close-send').click(function(event) {
 		event.preventDefault()
+		$('.modal-buy').fadeOut()
 		$('.modal-bg').fadeIn()
 		$('.modal-accepted').fadeIn()
 	})

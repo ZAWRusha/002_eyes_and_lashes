@@ -1098,7 +1098,7 @@
 
 									<a href="" class="button-b button-table-item button-cart">В корзину<span
 											class="icon icon-cart-w"></span></a>
-									<a href="" class="button-w button-wb button-table-item">Купить в 1 клик</span></a>
+									<a href="" class="button-w button-wb button-table-item modal-open-buy">Купить в 1 клик</span></a>
 									<div class="favorite-box">
 										<a href="">
 											<span class="pale">В избранное</span>
@@ -1186,7 +1186,7 @@
 
 									<a href="" class="button-b button-table-item button-cart">В корзину<span
 											class="icon icon-cart-w"></span></a>
-									<a href="" class="button-w button-wb button-table-item">Купить в 1 клик</span></a>
+									<a href="" class="button-w button-wb button-table-item modal-open-buy">Купить в 1 клик</span></a>
 									<div class="favorite-box">
 										<a href="">
 											<span class="pale">В избранное</span>
@@ -1243,8 +1243,43 @@
 	</div>
 
 
+	<!-- modal-buy -->
+	<div class="modal-bg"></div>
 
+	<div class="modal-buy">
+		<div class="modal-close"><span>&times;</span></div>
+		<div class="modal-title">Купить “Название товара”</div>
+		<div class="modal-content">
+			<div class="login-item-title">ФИО<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp">
+			<div class="login-item-title">Телефон<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp" name="phone">
+			<div class="login-item-title">E-mail<span>*</span></div>
+			<input type="text" class="contacts-inp login-inp modal-inp">
+			<div class="login-item-title">Адрес доставки и комментарий к заказу<span>*</span></div>
+			<textarea rows="5" cols="45" name="text" class="contacts-inp login-inp textarea-inp modal-inp"></textarea>
+			<div class="check modal-check">
+				<label>
+					<input class="category-checkbox" type="checkbox" checked>
+					<strong class="category-checkbox-new"></strong>
+					<span>Даю согласие на <a href="#">обработку персональных данных</a></span>
+				</label>
+			</div>
+			<div class="user-form-btn modal-box-btn">
+				<button type="submit" class="button-b modal-btn modal-close-send">Отправить</button>
+			</div>
+		</div>
+	</div>
 
+	<!-- modal-accepted -->
+	<div class="modal-accepted">
+		<div class="modal-close"><span>&times;</span></div>
+		<div class="modal-title">Ваша заявка принята!</div>
+		<div class="modal-accepted-content">
+			<p>Ваша заявка принята, мы перезвоним Вам в ближайшее время!</p>
+			<p>Спасибо за обращение в интернет-магазин <a href="">Eyes&Lashes</a></p>
+		</div>
+	</div>
 
 	<!-- footer -->
 	<footer>
