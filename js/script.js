@@ -79,6 +79,9 @@ $(document).ready(function() {
 		}
 	})
 
+	// phone mask *************************************************
+	$("input[name=phone]").mask("+7(999) 999-9999");
+
 	// change checkbox radio *************************************************
 	$('input[type=checkbox],input[type=radio]').styler();
 
@@ -124,17 +127,28 @@ $(document).ready(function() {
 	$('.sort-name').click(function(e) {
 		e.preventDefault();
 		$(this).parent().parent().find('.sort-cost').removeClass('a-active');
-		$(this).parent().parent().find('.sort-cost').removeClass('sort-active');
+		$(this).parent().parent().find('.sort-cost').removeClass('sort-icon-up');
+		// $(this).parent().parent().find('.sort-cost').removeClass('sort-icon-down');
 		$(this).addClass('a-active');
-		$(this).addClass('sort-active');
+		$(this).addClass('sort-icon-up');
+		$(this).toggleClass('sort-icon-down')
 	});
 	$('.sort-cost').click(function(e) {
 		e.preventDefault();
 		$(this).parent().parent().find('.sort-name').removeClass('a-active');
-		$(this).parent().parent().find('.sort-name').removeClass('sort-active');
+		$(this).parent().parent().find('.sort-name').removeClass('sort-icon-up');
+		// $(this).parent().parent().find('.sort-name').removeClass('sort-icon-down');
 		$(this).addClass('a-active');
-		$(this).addClass('sort-active');
+		$(this).addClass('sort-icon-up');
+		$(this).toggleClass('sort-icon-down')
 	});
+
+	// Переключение сортировки от меньшего к большему и наоборот (Category)
+	// $('.sort-icon-up').click(function(e) {
+	// 	e.preventDefault()
+	// 	$(this).toggleClass('sort-icon-down');
+	// 	console.log('Click');
+	// })
 
 	// Сортировка по кол-ву страниц (Category)
 	$('.sort-pages').click(function(e) {
@@ -143,7 +157,7 @@ $(document).ready(function() {
 		$(this).addClass('a-active');
 	});
 
-	// Меняет вид карточек (Category)
+	// Меняет вид карточек - плитка, или таблица (Category)
 	$('.category-sort-type_tile').click(function(e) {
 		e.preventDefault()
 		$(this).parent().find('.category-sort-type_table').removeClass('sort-type_table')
@@ -151,7 +165,6 @@ $(document).ready(function() {
 		$('.table-item_wrapper').hide()
 		$('.category-item-wrapper').fadeIn()
 	});
-
 	$('.category-sort-type_table').click(function(e) {
 		e.preventDefault()
 		$(this).parent().find('.category-sort-type_tile').removeClass('sort-type_tile')
@@ -250,4 +263,47 @@ $(document).ready(function() {
 		$('.modal-item').fadeIn()
 	})
 
+	// change in the quantity of goods
+	$('.count-right').click(function(e) {
+		e.preventDefault()
+		var num = $(this).parent().find('input').val()
+		num++
+		$(this).parent().find('input').val(num)
+	})
+	$('.count-left').click(function(e) {
+		e.preventDefault()
+		var num = $(this).parent().find('input').val()
+		num--
+		if (num < 1) num = 1
+		$(this).parent().find('input').val(num)
+	})
+	$('.count-number').keypress(function(e) {
+		if (isNaN(String.fromCharCode(e.which))) e.preventDefault();
+	})
+
+	// icon-favorite
+	$('.icon-favorite').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass('icon-favorite-active');
+	})
+
+	// favorite
+	$('.favorite-box').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass('favorite-box-active');
+	})
+
+	// curve
+	$('.box').click(function(e) {
+		e.preventDefault();
+		$(this).parent().parent().find('.box').removeClass('box-active');
+		$(this).addClass('box-active');
+	});
+
+	// color (item-detail.html)
+	$('.item-round-color').click(function(e) {
+		e.preventDefault();
+		$(this).parent().find('.item-round-color').removeClass('color-active');
+		$(this).addClass('color-active');
+	});
 })

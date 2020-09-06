@@ -35,7 +35,8 @@
 	<div class="top-menu">
 		<div class="container">
 			<div class="top-menu_block">
-				<img src="img/logo.png" alt="logo">
+				<a href="" class="mob-nav"></a>
+				<a href=""><img src="img/logo.png" alt="logo"></a>
 				<nav class="top-nav">
 					<ul>
 						<li class="top-nav_link"><a href="#">Каталог<img src="img/menu_arrow_down.png" alt=""></a>
@@ -109,14 +110,18 @@
 						<li><a href="#" class="top-nav_link">Контакты</a></li>
 					</ul>
 				</nav>
-				<div class="search">
+				<form class="search">
 					<input class="search-input" type="text" placeholder="Я ищу...">
-					<a href=""></a>
-				</div>
+					<input type="submit" class="search-submit" value="">
+				</form>
 				<div class="icons-pannel">
-					<a class="icon icon-favorite icon-count" href=""></a>
-					<a class="icon icon-cart icon-count" href=""></a>
-					<a class="icon icon-user" href=""></a>
+					<a class="icon icon-favorite-btn" href="">
+						<span>1</span>
+					</a>
+					<a class="icon icon-cart-btn" href="">
+						<span>2</span>
+					</a>
+					<a class="icon icon-user-btn" href=""></a>
 				</div>
 			</div>
 		</div>
@@ -197,9 +202,6 @@
 
 	</div>
 
-
-
-
 	<!-- footer -->
 	<footer>
 		<div class="container">
@@ -208,13 +210,13 @@
 
 				<div class="footer-block_links">
 					<div class="footer-block_link">
-						<img src="img/logo228x60.png" class="footer-logo" alt="logo">
+						<a href=""><img src="img/logo228x60.png" class="footer-logo" alt="logo"></a>
 						<p>Телефоны:</p>
 						<p><a href="tel:+79135270009"><strong>8 913 5270009</strong></a>, <a href="tel:+79135270004"><strong>8 913
 									5270004</strong></a></p>
 						<p><strong>e-mail: </strong><a href="mailto:eyesandlashes@yandex.ru"
 								class="mailto"><strong>eyesandlashes@yandex.ru</strong></a></p>
-						<p>Пункты выдачи в Красноярске</p>
+						<p>Пункты выдачи в Красноярске:</p>
 						<span class="footer-adress"><strong>ул. Мате Залки, д. 10г</strong></span>
 						<span><strong>пр. Красноярский рабочий, д.159</strong></span>
 						<p>Режим работы:</p>
@@ -276,6 +278,55 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+
+	<!-- mobile-block -->
+	<div class="container">
+		<div class="mobile-container">
+			<div class="mobile-block">
+				<div class="mobile-header">
+					<div class="modal-close mob-nav-close"><span>×</span></div>
+					<div class="icons-pannel">
+						<a class="icon icon-favorite-btn" href="">
+							<span>1</span>
+						</a>
+						<a class="icon icon-cart-btn" href="">
+							<span>2</span>
+						</a>
+						<a class="icon icon-user-btn" href=""></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="mobile-content">
+					<ul>
+						<li><a href="#">ГЛАВНАЯ</a></li>
+						<li>
+							<a href="#">Каталог</a>
+							<span class="mob-nav-open active"></span>
+							<ul style="display: block;">
+								<li><a href="#">Ресницы для наращивания</a></li>
+								<li><a href="#">Клей</a></li>
+								<li><a href="#">Препараты</a></li>
+								<li><a href="#">Оформление бровей</a></li>
+								<li><a href="#">Ламинирование ресниц</a></li>
+								<li><a href="#">Инструменты</a></li>
+								<li class="last"><a href="#">Сопутствующие материалы</a></li>
+							</ul>
+						</li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Скидки и акции</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="search mob-search">
+						<input class="search-input" type="text" placeholder="Я ищу...">
+						<input type="submit" class="search-submit" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end mobile-block -->
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
